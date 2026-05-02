@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRON PUMP | Premium Fitness Gym</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-bar"></div>
+            <p class="loader-text">IRON PUMP</p>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">💪</span>
+                <span class="logo-text">IRON<span class="logo-accent">PUMP</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                <li><a href="#testimonials" class="nav-link">Results</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title fade-in-up">
+                Build Strength.<br>Build Discipline.
+            </h1>
+            <p class="hero-subtitle fade-in-up delay-1">
+                Transform your body. Elevate your mind. Join the elite.
+            </p>
+            <div class="hero-buttons fade-in-up delay-2">
+                <a href="#pricing" class="btn btn-primary">Join Now</a>
+                <a href="#contact" class="btn btn-secondary">Book Free Trial</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span class="scroll-text">Scroll Down</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content fade-in">
+                    <span class="section-tag">About Us</span>
+                    <h2 class="section-title">Where Champions<br><span class="gold-text">Are Made</span></h2>
+                    <p class="about-text">
+                        Iron Pump isn't just a gym—it's a sanctuary for those who demand excellence. 
+                        Our state-of-the-art facility combines cutting-edge equipment with world-class 
+                        coaching to deliver results that speak for themselves.
+                    </p>
+                    <p class="about-text">
+                        Every rep, every set, every drop of sweat brings you closer to the best 
+                        version of yourself. Join a community committed to greatness.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🏆</div>
+                            <div class="feature-info">
+                                <h4>Certified Trainers</h4>
+                                <p>Expert coaches with proven results</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">⚡</div>
+                            <div class="feature-info">
+                                <h4>Modern Equipment</h4>
+                                <p>Premium machines & free weights</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎯</div>
+                            <div class="feature-info">
+                                <h4>Personal Coaching</h4>
+                                <p>Customized training programs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image fade-in delay-1">
+                    <div class="image-frame">
+                        <div class="image-placeholder about-placeholder">
+                            <span class="placeholder-text">Gym Interior</span>
+                        </div>
+                        <div class="experience-badge">
+                            <span class="badge-number">15+</span>
+                            <span class="badge-text">Years of<br>Excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Our Programs</span>
+                <h2 class="section-title">Premium <span class="gold-text">Services</span></h2>
+                <p class="section-subtitle">Tailored programs designed for maximum results</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">🏋️</div>
+                    <h3 class="service-title">Strength Training</h3>
+                    <p class="service-desc">Build raw power with our comprehensive strength programs. From powerlifting to bodybuilding, we've got you covered.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card fade-in delay-1">
+                    <div class="service-icon">🔥</div>
+                    <h3 class="service-title">Weight Loss</h3>
+                    <p class="service-desc">Scientifically designed fat-burning programs that combine HIIT, cardio, and nutrition guidance for sustainable results.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card fade-in delay-2">
+                    <div class="service-icon">👤</div>
+                    <h3 class="service-title">Personal Training</h3>
+                    <p class="service-desc">One-on-one sessions with elite trainers. Personalized workout plans, form correction, and constant motivation.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card fade-in delay-3">
+                    <div class="service-icon">❤️</div>
+                    <h3 class="service-title">Cardio</h3>
+                    <p class="service-desc">State-of-the-art cardio equipment and guided classes to boost endurance and heart health.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us section-padding" id="why-us">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Advantages</span>
+                <h2 class="section-title">Why <span class="gold-text">Choose Us</span></h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card fade-in">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h3>Expert Trainers</h3>
+                    <p>Certified professionals with years of experience in transforming physiques.</p>
+                </div>
+                <div class="why-card fade-in delay-1">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Flexible Timings</h3>
+                    <p>Open 5 AM to 11 PM. Train on your schedule, never miss a workout.</p>
+                </div>
+                <div class="why-card fade-in delay-2">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3>Affordable Plans</h3>
+                    <p>Premium fitness doesn't need premium prices. Competitive rates for all budgets.</p>
+                </div>
+                <div class="why-card fade-in delay-3">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Hygienic Environment</h3>
+                    <p>Rigorous cleaning protocols. Clean equipment, fresh air, sanitized spaces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding" id="testimonials">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Success Stories</span>
+                <h2 class="section-title">Real <span class="gold-text">Transformations</span></h2>
+            </div>
+            <div class="testimonial-carousel">
+                <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Previous testimonial">‹</button>
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="stars">★★★★★</div>
+                                <p class="testimonial-text">"Lost 25 kg in 6 months! The trainers at Iron Pump don't just teach exercises—they transform lives. Best decision I ever made."</p>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">RJ</div>
+                                    <div class="author-info">
+                                        <h4>Rahul Joshi</h4>
+                                        <span>Member since 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="stars">★★★★★</div>
+                                <p class="testimonial-text">"Went from skinny to muscular in 8 months. The personalized training and nutrition guidance made all the difference."</p>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">AP</div>
+                                    <div class="author-info">
+                                        <h4>Arjun Patel</h4>
+                                        <span>Member since 2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="stars">★★★★★</div>
+                                <p class="testimonial-text">"The atmosphere here is electric. Every day I walk in motivated. The results speak for themselves—I'm stronger than ever."</p>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">SK</div>
+                                    <div class="author-info">
+                                        <h4>Sanjay Kumar</h4>
+                                        <span>Member since 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="stars">★★★★★</div>
+                                <p class="testimonial-text">"As a working professional, the flexible timings are a lifesaver. Early morning workouts before office changed my life."</p>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">VM</div>
+                                    <div class="author-info">
+                                        <h4>Vikram Mehta</h4>
+                                        <span>Member since 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn" id="nextBtn" aria-label="Next testimonial">›</button>
+            </div>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing section-padding" id="pricing">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Membership</span>
+                <h2 class="section-title">Choose Your <span class="gold-text">Plan</span></h2>
+                <p class="section-subtitle">Invest in yourself. Start your transformation today.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card fade-in">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Basic</h3>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">1,999</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> Gym Access (6 AM - 10 PM)</li>
+                        <li><span class="check">✓</span> Cardio Equipment</li>
+                        <li><span class="check">✓</span> Weight Training Area</li>
+                        <li><span class="check">✓</span> Locker Room Access</li>
+                        <li class="disabled"><span class="cross">×</span> Personal Training</li>
+                        <li class="disabled"><span class="cross">×</span> Group Classes</li>
+                        <li class="disabled"><span class="cross">×</span> Nutrition Plan</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Get Started</a>
+                </div>
+                <div class="pricing-card featured fade-in delay-1">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Standard</h3>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">3,499</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> 24/7 Gym Access</li>
+                        <li><span class="check">✓</span> All Equipment</li>
+                        <li><span class="check">✓</span> Group Fitness Classes</li>
+                        <li><span class="check">✓</span> Sauna & Steam Room</li>
+                        <li><span class="check">✓</span> 2 PT Sessions/Month</li>
+                        <li class="disabled"><span class="cross">×</span> Custom Nutrition Plan</li>
+                        <li class="disabled"><span class="cross">×</span> Priority Booking</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="pricing-card fade-in delay-2">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Premium</h3>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">5,999</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> 24/7 Gym Access</li>
+                        <li><span class="check">✓</span> All Equipment & Classes</li>
+                        <li><span class="check">✓</span> Unlimited Personal Training</li>
+                        <li><span class="check">✓</span> Custom Nutrition Plan</li>
+                        <li><span class="check">✓</span> Body Composition Analysis</li>
+                        <li><span class="check">✓</span> Priority Class Booking</li>
+                        <li><span class="check">✓</span> Guest Passes (2/month)</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2 class="cta-title">Start Your Fitness Journey Today</h2>
+                <p class="cta-subtitle">Join 5000+ members who have already transformed their lives. Your best self is waiting.</p>
+                <a href="#contact" class="btn btn-primary btn-large">Get Membership</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Ready to <span class="gold-text">Transform?</span></h2>
+                    <p class="contact-desc">Visit us for a free tour or fill out the form to book your complimentary trial session.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>123 Fitness Street, Bandra West<br>Mumbai, Maharashtra 400050</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+91 98765 43210</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>info@ironpump.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕐</div>
+                            <div class="contact-text">
+                                <h4>Timings</h4>
+                                <p>Mon - Sat: 5:00 AM - 11:00 PM<br>Sunday: 7:00 AM - 9:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container fade-in delay-1">
+                    <form class="contact-form" id="contactForm">
+                        <h3 class="form-title">Book Free Trial</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <select id="interest" name="interest">
+                                <option value="">Interested In</option>
+                                <option value="strength">Strength Training</option>
+                                <option value="weight-loss">Weight Loss</option>
+                                <option value="personal-training">Personal Training</option>
+                                <option value="cardio">Cardio</option>
+                                <option value="general">General Fitness</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-icon">💪</span>
+                        <span class="logo-text">IRON<span class="logo-accent">PUMP</span></span>
+                    </a>
+                    <p class="footer-tagline">Build Strength. Build Discipline.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="#services">Strength Training</a></li>
+                        <li><a href="#services">Weight Loss</a></li>
+                        <li><a href="#services">Personal Training</a></li>
+                        <li><a href="#services">Cardio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h4>Gym Timings</h4>
+                    <ul>
+                        <li><span>Mon - Sat:</span> 5:00 AM - 11:00 PM</li>
+                        <li><span>Sunday:</span> 7:00 AM - 9:00 PM</li>
+                        <li><span>Holidays:</span> 8:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Iron Pump Gym. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
