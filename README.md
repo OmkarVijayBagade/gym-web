@@ -1,4 +1,4 @@
-Gym Website Starter Template
+### Gym Website Starter Template
 
 ## Tech Stack
 
