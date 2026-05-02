@@ -1,0 +1,1 @@
+this is a starter template for gym websites. 
