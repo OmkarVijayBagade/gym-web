@@ -19,7 +19,7 @@ const Loader = () => {
       <div className="loader-content">
         <div className="loader-bar"></div>
         <div className="loader-brand">
-          <Image src="/images/ff1.webp" alt="Fitness Fort" width={60} height={60} className="loader-logo" priority />
+          <Image src="/images/ff-v1.webp" alt="Fitness Fort" width={60} height={60} className="loader-logo" priority />
           <span className="loader-brand-text">Fitness Fort</span>
         </div>
       </div>

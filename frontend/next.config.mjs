@@ -12,6 +12,7 @@ const nextConfig = {
 
   allowedDevOrigins: [
     "*.trycloudflare.com",
+    '192.168.29.47',
   ],
 };
 

@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="footer-grid">
           <div className="footer-brand">
             <a href="#" className="footer-logo">
-              <Image src="/images/ff1.webp" alt="Fitness Fort" width={50} height={50} className="footer-logo-img" />
+              <Image src="/images/ff-v1.webp" alt="Fitness Fort" width={50} height={50} className="footer-logo-img" />
               <span className="footer-brand-text">Fitness Fort</span>
             </a>
             <p className="footer-tagline">Build Strength. Build Discipline.</p>
