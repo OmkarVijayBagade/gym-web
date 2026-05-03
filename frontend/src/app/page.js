@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import Powerlifting from "@/components/Powerlifting";
 import WhyUs from "@/components/WhyUs";
 import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing";
@@ -81,6 +82,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <Powerlifting />
       <WhyUs />
       <Testimonials />
       <Pricing />

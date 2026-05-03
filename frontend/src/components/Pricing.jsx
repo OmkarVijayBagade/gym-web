@@ -1,49 +1,54 @@
+"use client";
+
 const Pricing = () => {
   const plans = [
     {
-      name: "Basic",
-      price: "1,999",
+      name: "Lifter",
+      price: "2,499",
       period: "/month",
+      description: "For dedicated lifters training independently",
       features: [
-        { text: "Gym Access (6 AM - 10 PM)", included: true },
-        { text: "Cardio Equipment", included: true },
-        { text: "Weight Training Area", included: true },
-        { text: "Locker Room Access", included: true },
-        { text: "Personal Training", included: false },
-        { text: "Group Classes", included: false },
-        { text: "Nutrition Plan", included: false },
+        { text: "24/7 Gym Access", included: true },
+        { text: "All IPF Equipment", included: true },
+        { text: "Chalk & Accessories", included: true },
+        { text: "Competition Prep Resources", included: true },
+        { text: "Monthly Programming", included: false },
+        { text: "1-on-1 Coaching", included: false },
+        { text: "Meet Day Coaching", included: false },
       ],
       featured: false,
       delay: "",
     },
     {
-      name: "Standard",
-      price: "3,499",
+      name: "Competitor",
+      price: "4,999",
       period: "/month",
+      description: "For athletes preparing for competition",
       features: [
         { text: "24/7 Gym Access", included: true },
-        { text: "All Equipment", included: true },
-        { text: "Group Fitness Classes", included: true },
-        { text: "Sauna & Steam Room", included: true },
-        { text: "2 PT Sessions/Month", included: true },
-        { text: "Custom Nutrition Plan", included: false },
-        { text: "Priority Booking", included: false },
+        { text: "All IPF Equipment", included: true },
+        { text: "Custom Monthly Programming", included: true },
+        { text: "Weekly Check-ins", included: true },
+        { text: "Video Form Analysis", included: true },
+        { text: "Nutrition Guidance", included: true },
+        { text: "Meet Day Coaching", included: false },
       ],
       featured: true,
       delay: "delay-1",
     },
     {
-      name: "Premium",
-      price: "5,999",
+      name: "Elite",
+      price: "9,999",
       period: "/month",
+      description: "For serious competitors chasing records",
       features: [
-        { text: "24/7 Gym Access", included: true },
-        { text: "All Equipment & Classes", included: true },
-        { text: "Unlimited Personal Training", included: true },
+        { text: "24/7 Gym Access + Priority", included: true },
+        { text: "All IPF Equipment", included: true },
+        { text: "Daily Custom Programming", included: true },
+        { text: "Unlimited Coach Access", included: true },
+        { text: "Video Analysis (Daily)", included: true },
         { text: "Custom Nutrition Plan", included: true },
-        { text: "Body Composition Analysis", included: true },
-        { text: "Priority Class Booking", included: true },
-        { text: "Guest Passes (2/month)", included: true },
+        { text: "Meet Day Coaching", included: true },
       ],
       featured: false,
       delay: "delay-2",
@@ -56,10 +61,10 @@ const Pricing = () => {
         <div className="section-header fade-in">
           <span className="section-tag">Membership</span>
           <h2 className="section-title">
-            Choose Your <span className="gold-text">Plan</span>
+            Invest in <span className="gold-text">Strength</span>
           </h2>
           <p className="section-subtitle">
-            Invest in yourself. Start your transformation today.
+            Choose the plan that matches your competitive goals
           </p>
         </div>
         <div className="pricing-grid">
@@ -71,6 +76,7 @@ const Pricing = () => {
               {plan.featured && <div className="popular-badge">Most Popular</div>}
               <div className="pricing-header">
                 <h3 className="plan-name">{plan.name}</h3>
+                <p className="plan-description">{plan.description}</p>
                 <div className="plan-price">
                   <span className="currency">₹</span>
                   <span className="amount">{plan.price}</span>

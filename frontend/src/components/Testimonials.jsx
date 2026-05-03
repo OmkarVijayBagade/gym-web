@@ -8,32 +8,40 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      stars: "★★★★★",
-      text: '"Lost 25 kg in 6 months! The trainers at Iron Pump don\'t just teach exercises—they transform lives. Best decision I ever made."',
-      avatar: "RJ",
-      author: "Rahul Joshi",
-      memberSince: "Member since 2023",
+      quote: "From 140kg to 215kg squat in 18 months. Won silver at Nationals 2024.",
+      text: '"Came here with a 140kg squat and zero competition experience. Coach Rohit\'s programming took me to 215kg and my first national medal. The attention to detail here is unmatched."',
+      avatar: "VS",
+      author: "Vikram Singh",
+      role: "National Medalist",
+      lift: "Squat: 215kg",
+      memberSince: "Training since 2022",
     },
     {
-      stars: "★★★★★",
-      text: '"Went from skinny to muscular in 8 months. The personalized training and nutrition guidance made all the difference."',
+      quote: "Broke the 1000kg total barrier at 74kg bodyweight.",
+      text: '"This gym breeds champions. The equipment is IPF-spec, the coaches have actually competed at the highest level, and the environment pushes you to be better. Hit 1002.5kg total here."',
       avatar: "AP",
       author: "Arjun Patel",
-      memberSince: "Member since 2022",
+      role: "IPF Competitor",
+      lift: "Total: 1002.5kg",
+      memberSince: "Training since 2021",
     },
     {
-      stars: "★★★★★",
-      text: '"The atmosphere here is electric. Every day I walk in motivated. The results speak for themselves—I\'m stronger than ever."',
-      avatar: "SK",
-      author: "Sanjay Kumar",
-      memberSince: "Member since 2021",
+      quote: "First woman in the gym to deadlift 200kg.",
+      text: "Never thought I'd compete in powerlifting. Started here for 'fitness' and ended up pulling 200kg. The coaching staff knows how to train women for strength without compromise.",
+      avatar: "PM",
+      author: "Priya Menon",
+      role: "State Champion",
+      lift: "Deadlift: 200kg",
+      memberSince: "Training since 2023",
     },
     {
-      stars: "★★★★★",
-      text: '"As a working professional, the flexible timings are a lifesaver. Early morning workouts before office changed my life."',
-      avatar: "VM",
-      author: "Vikram Mehta",
-      memberSince: "Member since 2023",
+      quote: "At 42, set a new bench press state record at 165kg.",
+      text: '"Age is just a number here. The masters programming kept me injury-free while pushing my bench from 120kg to 165kg. Competing at 42 alongside 20-year-olds—this place makes it possible."',
+      avatar: "RK",
+      author: "Rajesh Khanna",
+      role: "Masters Record Holder",
+      lift: "Bench: 165kg",
+      memberSince: "Training since 2020",
     },
   ];
 
@@ -62,9 +70,9 @@ const Testimonials = () => {
     <section className="testimonials section-padding" id="testimonials">
       <div className="container">
         <div className="section-header fade-in">
-          <span className="section-tag">Success Stories</span>
+          <span className="section-tag">Athlete Stories</span>
           <h2 className="section-title">
-            Real <span className="gold-text">Transformations</span>
+            Champions <span className="gold-text">Built Here</span>
           </h2>
         </div>
         <div className="testimonial-carousel">
@@ -91,13 +99,20 @@ const Testimonials = () => {
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="testimonial-card">
                   <div className="testimonial-content">
-                    <div className="stars">{testimonial.stars}</div>
+                    <div className="testimonial-achievement">
+                      <span className="achievement-icon">🏆</span>
+                      <span className="achievement-quote">{testimonial.quote}</span>
+                    </div>
                     <p className="testimonial-text">{testimonial.text}</p>
+                    <div className="testimonial-stats">
+                      <span className="stat-badge">{testimonial.lift}</span>
+                    </div>
                     <div className="testimonial-author">
                       <div className="author-avatar">{testimonial.avatar}</div>
                       <div className="author-info">
                         <h4>{testimonial.author}</h4>
-                        <span>{testimonial.memberSince}</span>
+                        <span className="author-role">{testimonial.role}</span>
+                        <span className="author-since">{testimonial.memberSince}</span>
                       </div>
                     </div>
                   </div>
