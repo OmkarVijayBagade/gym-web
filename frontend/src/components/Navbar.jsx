@@ -61,7 +61,7 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`} id="navbar">
-      <div className="container nav-container">
+      <div className="nav-container">
         <a href="#" className="logo" onClick={closeMobileMenu}>
           <Image src="/images/ff-v1.webp" alt="Fitness Fort" width={46} height={46} className="navbar-logo-img" />
           <span className="navbar-brand-text">Fitness Fort</span>
