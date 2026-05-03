@@ -20,9 +20,9 @@ const Hero = () => {
 
       <div className="hero-content">
         <h1 className="hero-title fade-in-up">
-          Build Strength.
+          Build <span className="gold-text">Strength.</span>
           <br />
-          Build Discipline.
+          Build <span className="gold-text">Discipline.</span>
         </h1>
         <p className="hero-subtitle fade-in-up delay-1">
           Transform your body. Elevate your mind. Join the elite.
