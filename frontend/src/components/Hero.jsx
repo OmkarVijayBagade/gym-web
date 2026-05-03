@@ -1,5 +1,7 @@
 "use client";
 
+import { useState, useEffect } from "react";
+
 const Hero = () => {
   const [loaded, setLoaded] = useState(false);
 
