@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 const About = () => {
   const achievements = [
     { number: "47", label: "National Champions" },
@@ -83,36 +85,23 @@ const About = () => {
           <div className="about-image fade-in delay-1">
             <div className="image-frame">
               <div className="about-visual">
-                <div className="visual-content">
-                  <div className="visual-badge">EST. 2009</div>
-                  <div className="visual-text">
-                    <span className="visual-line">POWERLIFTING</span>
-                    <span className="visual-line">HEADQUARTERS</span>
-                  </div>
-                  <div className="visual-barbell">
-                    <svg viewBox="0 0 200 40" fill="none">
-                      <rect x="10" y="5" width="25" height="30" rx="2" fill="#333"/>
-                      <rect x="38" y="10" width="20" height="20" rx="2" fill="#444"/>
-                      <rect x="60" y="18" width="80" height="4" rx="2" fill="#666"/>
-                      <rect x="142" y="10" width="20" height="20" rx="2" fill="#444"/>
-                      <rect x="165" y="5" width="25" height="30" rx="2" fill="#333"/>
-                    </svg>
-                  </div>
+                <Image
+                  src="/images/about1.webp"
+                  alt="Fitness Fort Powerlifting Headquarters"
+                  fill
+                  className="about-visual-img"
+                  style={{ objectFit: "cover", objectPosition: "center" }}
+                />
+
+
+                <div className="experience-badge">
+                  <span className="badge-number">16</span>
+                  <span className="badge-text">
+                    Years of
+                    <br />
+                    Dominance
+                  </span>
                 </div>
-                <div className="visual-rings">
-                  <div className="ring ring-1"></div>
-                  <div className="ring ring-2"></div>
-                  <div className="ring ring-3"></div>
-                </div>
-              </div>
-              
-              <div className="experience-badge">
-                <span className="badge-number">16</span>
-                <span className="badge-text">
-                  Years of
-                  <br />
-                  Dominance
-                </span>
               </div>
             </div>
           </div>
