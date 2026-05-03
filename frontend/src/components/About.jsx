@@ -20,10 +20,10 @@ const About = () => {
               <span className="gold-text">Proven in Competition.</span>
             </h2>
             <p className="about-text">
-              Since 2009, Iron Pump has been the breeding ground for India&apos;s 
-              strongest athletes. We&apos;re not a fitness center—we&apos;re a powerlifting 
-              institution where PRs are broken daily and champions are forged under 
-              the bar.
+              Fitness Fort isn&apos;t just a gym—it&apos;s a sanctuary for those who demand
+              excellence. Our state-of-the-art facility combines cutting-edge
+              equipment with world-class coaching to deliver results that speak
+              for themselves.
             </p>
             <p className="about-text">
               Our head coach, a former IPF World Champion, has trained over 500 

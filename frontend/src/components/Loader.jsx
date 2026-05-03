@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const Loader = () => {
   const [isHidden, setIsHidden] = useState(false);
@@ -17,7 +18,10 @@ const Loader = () => {
     <div id="loader" className={isHidden ? "hidden" : ""}>
       <div className="loader-content">
         <div className="loader-bar"></div>
-        <p className="loader-text">IRON PUMP</p>
+        <div className="loader-brand">
+          <Image src="/images/ff-v1.webp" alt="Fitness Fort" width={60} height={60} className="loader-logo" priority />
+          <span className="loader-brand-text">Fitness Fort</span>
+        </div>
       </div>
     </div>
   );

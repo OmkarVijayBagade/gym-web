@@ -8,13 +8,11 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      quote: "From 140kg to 215kg squat in 18 months. Won silver at Nationals 2024.",
-      text: '"Came here with a 140kg squat and zero competition experience. Coach Rohit\'s programming took me to 215kg and my first national medal. The attention to detail here is unmatched."',
-      avatar: "VS",
-      author: "Vikram Singh",
-      role: "National Medalist",
-      lift: "Squat: 215kg",
-      memberSince: "Training since 2022",
+      stars: "★★★★★",
+      text: '"Lost 25 kg in 6 months! The trainers at Fitness Fort don\'t just teach exercises—they transform lives. Best decision I ever made."',
+      avatar: "RJ",
+      author: "Rahul Joshi",
+      memberSince: "Member since 2023",
     },
     {
       quote: "Broke the 1000kg total barrier at 74kg bodyweight.",

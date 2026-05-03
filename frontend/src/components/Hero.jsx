@@ -1,7 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
 const Hero = () => {
   const [loaded, setLoaded] = useState(false);
 
@@ -11,22 +9,21 @@ const Hero = () => {
 
   return (
     <section className="hero" id="home">
-      {/* Animated background layers */}
-      <div className="hero-bg-layers">
-        <div className="bg-layer bg-gradient"></div>
-        <div className="bg-layer bg-noise"></div>
-        <div className="bg-layer bg-radial"></div>
-      </div>
-      
+      {/* Video Background */}
+      <video
+        className="hero-video"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+      >
+        <source src="/videos/hero-video.webm" type="video/webm" />
+        <source src="/videos/hero-video1.mp4" type="video/mp4" />
+      </video>
+
       <div className="hero-overlay"></div>
-      
-      {/* Floating strength indicators */}
-      <div className="strength-markers">
-        <div className={`marker marker-1 ${loaded ? "visible" : ""}`}>SQUAT</div>
-        <div className={`marker marker-2 ${loaded ? "visible" : ""}`}>BENCH</div>
-        <div className={`marker marker-3 ${loaded ? "visible" : ""}`}>DEADLIFT</div>
-      </div>
-      
+
       <div className="hero-content">
         <div className="hero-badge fade-in-up">
           <span className="badge-dot"></span>
@@ -73,7 +70,6 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      
       <div className="hero-scroll">
         <div className="mouse">
           <div className="wheel"></div>
