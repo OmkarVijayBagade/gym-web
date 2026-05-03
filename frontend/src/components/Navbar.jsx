@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -62,10 +63,8 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`} id="navbar">
       <div className="container nav-container">
         <a href="#" className="logo" onClick={closeMobileMenu}>
-          <span className="logo-icon">💪</span>
-          <span className="logo-text">
-            IRON<span className="logo-accent">PUMP</span>
-          </span>
+          <Image src="/images/ff1.webp" alt="Fitness Fort" width={46} height={46} className="navbar-logo-img" />
+          <span className="navbar-brand-text">Fitness Fort</span>
         </a>
         <ul
           className={`nav-links ${isMobileMenuOpen ? "active" : ""}`}

@@ -11,7 +11,7 @@ const About = () => {
               <span className="gold-text">Are Made</span>
             </h2>
             <p className="about-text">
-              Iron Pump isn&apos;t just a gym—it&apos;s a sanctuary for those who demand
+              Fitness Fort isn&apos;t just a gym—it&apos;s a sanctuary for those who demand
               excellence. Our state-of-the-art facility combines cutting-edge
               equipment with world-class coaching to deliver results that speak
               for themselves.

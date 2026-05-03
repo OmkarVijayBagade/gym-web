@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -5,10 +7,7 @@ const Footer = () => {
         <div className="footer-grid">
           <div className="footer-brand">
             <a href="#" className="footer-logo">
-              <span className="logo-icon">💪</span>
-              <span className="logo-text">
-                IRON<span className="logo-accent">PUMP</span>
-              </span>
+              <Image src="/images/ff1.webp" alt="Fitness Fort" width={150} height={50} className="footer-logo-img" />
             </a>
             <p className="footer-tagline">Build Strength. Build Discipline.</p>
             <div className="social-links">
@@ -107,7 +106,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2024 Iron Pump Gym. All rights reserved.</p>
+          <p>&copy; 2024 Fitness Fort Gym. All rights reserved.</p>
         </div>
       </div>
     </footer>

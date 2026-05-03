@@ -14,8 +14,8 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "IRON PUMP | Premium Fitness Gym",
-  description: "Transform your body. Elevate your mind. Join the elite fitness community at Iron Pump Gym.",
+  title: "Fitness Fort | Premium Fitness Gym",
+  description: "Transform your body. Elevate your mind. Join the elite fitness community at Fitness Fort Gym.",
 };
 
 export default function RootLayout({ children }) {

@@ -9,7 +9,7 @@ const Testimonials = () => {
   const testimonials = [
     {
       stars: "★★★★★",
-      text: '"Lost 25 kg in 6 months! The trainers at Iron Pump don\'t just teach exercises—they transform lives. Best decision I ever made."',
+      text: '"Lost 25 kg in 6 months! The trainers at Fitness Fort don\'t just teach exercises—they transform lives. Best decision I ever made."',
       avatar: "RJ",
       author: "Rahul Joshi",
       memberSince: "Member since 2023",
