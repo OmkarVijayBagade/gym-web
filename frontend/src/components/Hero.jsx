@@ -37,8 +37,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="hero-scroll">
-        <span className="scroll-text">Scroll Down</span>
+      <div className="hero-scroll"> <span className="scroll-text">Scroll Down</span>
         <div className="scroll-line"></div>
       </div>
     </section>

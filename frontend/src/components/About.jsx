@@ -89,6 +89,7 @@ const About = () => {
                   src="/images/about1.webp"
                   alt="Fitness Fort Powerlifting Headquarters"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="about-visual-img"
                   style={{ objectFit: "cover", objectPosition: "center" }}
                 />
