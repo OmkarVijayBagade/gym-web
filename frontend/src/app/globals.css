@@ -102,104 +102,25 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--pure-black);
+    background: #000000;
+    z-index: 10000;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 10000;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
+    opacity: 1;
+    transition: opacity 0.6s ease;
 }
 
-#loader.hidden {
+#loader.fading {
     opacity: 0;
-    visibility: hidden;
     pointer-events: none;
 }
 
-.loader-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-}
-
-.loader-bar {
-    width: 100%;
-    height: 4px;
-    background: var(--gray-800);
-    border-radius: 2px;
-    overflow: hidden;
-    margin-bottom: 20px;
-    position: relative;
-    align-self: stretch;
-}
-
-.loader-bar::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--gold);
-    animation: loading 2s ease forwards;
-}
-
-@keyframes loading {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-.loader-brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
-}
-
-.loader-logo {
-    display: block;
+.loader-video {
+    width: 420px;
+    height: 420px;
     object-fit: contain;
-    animation: pulse 1.5s ease infinite;
-    filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.5));
-    flex-shrink: 0;
-    align-self: center;
-    width: auto;
-    height: auto;
-}
-
-.loader-brand-text {
-    font-family: var(--font-brand);
-    font-size: 1.6rem;
-    font-weight: normal;
-    letter-spacing: 3px;
-    color: var(--gold);
-    text-transform: uppercase;
-    animation: pulse 1.5s ease infinite;
-    line-height: 1;
-    white-space: nowrap;
-    text-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
-    display: flex;
-    align-items: center;
-    align-self: center;
-    padding-top: 0.1em;
-}
-
-@keyframes pulse {
-
-    0%,
-    100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.5;
-    }
+    display: block;
 }
 
 /* Scroll Progress Bar */

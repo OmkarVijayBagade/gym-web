@@ -1,28 +1,52 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import Image from "next/image";
+import { useState, useEffect, useRef } from "react";
 
 const Loader = () => {
   const [isHidden, setIsHidden] = useState(false);
+  const [isFading, setIsFading] = useState(false);
+  const videoRef = useRef(null);
+
+  const dismiss = () => {
+    setIsFading(true);
+    setTimeout(() => setIsHidden(true), 600);
+  };
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsHidden(true);
-    }, 2000);
+    const video = videoRef.current;
+    if (!video) return;
 
-    return () => clearTimeout(timer);
+    // Fallback: hide after 15 seconds (safety net only)
+    const fallback = setTimeout(dismiss, 6500);
+
+    const handleEnded = () => {
+      clearTimeout(fallback);
+      dismiss();
+    };
+
+    video.addEventListener("ended", handleEnded);
+
+    return () => {
+      clearTimeout(fallback);
+      video.removeEventListener("ended", handleEnded);
+    };
   }, []);
 
+  if (isHidden) return null;
+
   return (
-    <div id="loader" className={isHidden ? "hidden" : ""}>
-      <div className="loader-content">
-        <div className="loader-bar"></div>
-        <div className="loader-brand">
-          <Image src="/images/ff-v1.webp" alt="Fitness Fort" width={60} height={60} className="loader-logo" priority />
-          <span className="loader-brand-text">Fitness Fort</span>
-        </div>
-      </div>
+    <div id="loader" className={isFading ? "fading" : ""}>
+      <video
+        ref={videoRef}
+        className="loader-video"
+        autoPlay
+        muted
+        playsInline
+        preload="auto"
+      >
+        <source src="/videos/intro.webm" type="video/webm" />
+        <source src="/videos/intro.mp4" type="video/mp4" />
+      </video>
     </div>
   );
 };
